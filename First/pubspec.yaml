@@ -53,6 +53,11 @@ dev_dependencies:
 flutter:
   assets:
     - assets/
+  fonts:
+    - family: AbyssinicaSIL
+      fonts:
+        - asset: font/AbyssinicaSIL-Regular2.ttf
+          weight: 400
 
   # The following line ensures that the Material Icons font is
   # included with your application, so that you can use the icons in

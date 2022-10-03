@@ -10,10 +10,21 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return MaterialApp(
-      home: Center(
-        child: Container( width: 50, height: 50, color: Colors.blue ),
+      home: Scaffold(
+        appBar: AppBar(title: Text('This is app')),
+        body: Container(
+            child: Text('hey')),
+        bottomNavigationBar: BottomAppBar(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Icon(Icons.phone),
+              Icon(Icons.message),
+              Icon(Icons.contact_page),
+            ],
+          )
+        ),
       )
     );
-
   }
 }
