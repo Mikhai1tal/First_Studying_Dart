@@ -15,13 +15,16 @@ class MyApp extends StatelessWidget {
         body: Container(
             child: Text('hey')),
         bottomNavigationBar: BottomAppBar(
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              Icon(Icons.phone),
-              Icon(Icons.message),
-              Icon(Icons.contact_page),
-            ],
+          child: Container(
+            height: 60,
+            child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: [
+                  Icon(Icons.phone),
+                  Icon(Icons.message),
+                  Icon(Icons.contact_page),
+                ],
+          )
           )
         ),
       )
